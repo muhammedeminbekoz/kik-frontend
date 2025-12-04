@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
 import Test from './test';
 import styles from './App.module.css';
+import { Title } from './Component';
+
+
+
 function App() {
 
 
@@ -16,7 +20,9 @@ function App() {
     <div className={styles.App} >
 
 
-      <h3> {process.env.NODE_ENV} </h3>
+      <Title> {process.env.NODE_ENV} </Title>
+      <Title theme={'dark'}> {process.env.NODE_ENV} </Title>
+
       <p> {process.env.REACT_APP_API_URL} </p>
       <Test />
     </div>
